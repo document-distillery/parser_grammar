@@ -1,0 +1,76 @@
+// Define a grammar
+grammar edgerp;
+rule: 
+      paragraphs
+      ;
+
+/*
+section:
+	section-title subsections
+
+section-title:
+	"Item 7.  MANAGEMENT'S DISCUSSION AND ANALYSIS" + trailing words
+	"Item 1A. Risk Factors" 
+	"^Notes to the Financial Statements\n"
+
+subsections: 
+	subsection ( subsection )*
+
+subsection : 
+	subsection-title paragraphs
+
+subsection-title:
+	SUBSECTION-TITLE-PATTERN  /* All upper case words in 1 line ends with a new line like "FORWARD LOOKING STATEMENTS" * /
+
+*/
+paragraphs:
+	 ( paragraph )+
+	;
+
+paragraph:
+	( sentence )+ NEWLINE+
+	;
+
+sentence:
+	WORD ( ' \t'+  WORD )* '.'
+	;
+
+fragment
+WORD :
+        ( DOTWORD | STDWORD );
+
+fragment
+DOTWORD:
+	 'P.O.'
+	| 'U.S.'
+	| 'U.S.A.'
+	| 'i.e.' | 'I.E.'
+	| 'e.g.' | 'E.G.'
+	| 'D.C.'
+	| 'I.R.S.'
+	| 'N.Y.'
+	| 'B.V.'
+	| 'N.E.' | 'N.W.' | 'S.E.' | 'S.W.'
+	| 'J.A.'
+	| 'L.P.'
+	| 'U.S.C.'
+	| 'Non-U.S.'
+	| 'Mr.' | 'Mrs.' | 'Ms.'
+	| 'MR.' | 'MRS.' | 'MS.'
+	| 'LTD.' | 'Ltd.'
+	| 'Corp.' | 'CORP.' | 'Inc.' | 'INC.' 
+	| 'No.' 
+	| 'Engr.' | 'Tech.' | 'Dir.' | 'Dr.' | 'DR.' 
+	| 'Jan.' | 'Feb.' | 'Mar.' | 'Apr.' | 'May ' |'Jun.' | 'Jul.' | 'Aug.' | 'Sep.' | 'Oct.' | 'Nov.' | 'Dec.' |
+	| 'JAN.' | 'FEB.' | 'MAR.' | 'APR.' | 'MAY ' |'JUN.' | 'JUL.' | 'AUG.' | 'SEP.' | 'OCT.' | 'NOV.' | 'DEC.' |
+	| 'ST.' | 'AVE.' | 'LN.' 
+	| ' N.' | ' S.' | ' W.' | ' E.' 
+	;
+
+fragment
+STDWORD :
+	 [A-Za-z_]+
+	 ;
+
+fragment
+NEWLINE : ('\r'| '\n' | '\r\n') ;

@@ -1,0 +1,173 @@
+SECURITIES REGISTERED PURSUANT TO SECTION 12(g) OF THE ACT:
+
+
+None
+
+     Indicate by check markif the registrant is a well-known seasoned issuer, as defined in Rule 405 ofthe Securities Act. Yes 
+|X|  
+No 
+|  |
+
+     Indicate  by check mark if the registrant is not required to file reports pursuant to  Section 13 or Section 15(d) of the Exchange Act. Yes 
+|  |  
+No 
+|X|
+
+     Indicate by check    mark whether the registrant (1) has filed all reports required to be filed    by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the    preceding 12 months (or for such shorter period that the registrant was required    to file such reports), and (2) has been subject to such filing requirements    for the past 90 days. Yes 
+|X|  
+No 
+|  |
+
+     Indicate by check mark if disclosure of delinquent    filers pursuant to Item 405 of Regulation S-K is not contained herein, and    will not be contained, to the best of registrant's knowledge, in definitive    proxy or information statements incorporated by reference in Part III of    this Form 10-K or any amendment to this Form 10-K. 
+|  |
+
+Indicate by check mark whether the registrant is    a large accelerated filer, an accelerated filer, or a non-accelerated filer.    See definition of “accelerated filer and large accelerated      filer” in Rule 12b-2 of the Exchange Act.
+
+Large accelerated filer 
+|X|
+     Acceleratedfiler 
+|  |
+     Non-acceleratedfiler 
+|  |
+
+     Indicate by check markwhether the registrant is a shell company (as defined in Rule 12b-2 of the ExchangeAct). Yes 
+|  |  
+No 
+|X|
+
+     The aggregate market value of the voting common    equity of the registrant held by non-affiliates of the registrant on February    27, 2006 was approximately $12.1 billion  computed upon the basis of the closing sales price of the Class A Ordinary    Shares on that date. For purposes of this computation, ordinary shares held    by directors and officers of the registrant have been excluded. Such exclusion    is not intended, nor shall it be deemed, to be an admission that such persons    are affiliates of the registrant.
+
+     As of February 28, 2006, there were outstanding 179,559,424 Class A Ordinary Shares, $0.01 par value per share, of the registrant.
+
+Documents Incorporated by Reference
+
+
+     The Registrant's Definitive Proxy Statement to be filed with the Securities and Exchange Commission pursuant to Regulation 14A not later than 120 days after the end of the fiscalyear covered by this report relating to the annual meeting of ordinary shareholders to be held on April 28, 2006 is incorporated by reference into Part III of this Form 10-K.
+
+
+XL CAPITAL LTD
+
+
+TABLE OF CONTENTS
+
+
+Page
+
+ PART I
+
+Item 1.
+ Business
+ 1
+ Item 1A.
+ Risk Factors
+ 29
+ Item 1B.
+ Unresolved Staff Comments
+ 41
+ Item 2.
+ Properties
+ 42
+ Item 3.
+ Legal Proceedings
+ 42
+ Item 4.
+ Submission of Matters to a Vote of Security Holders
+ 44
+ PART II
+
+Item 5.
+ Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of
+ Equity Securities
+ 46
+ Item 6.
+ Selected Financial Data
+ 48
+ Item 7.
+ Management's Discussion and Analysis of Financial Condition and Results of Operations
+ 50
+ Item 7A.
+ Quantitative and Qualitative Disclosures About Market Risk
+ 100
+ Item 8.
+ Financial Statements and Supplementary Data
+ 109
+ Item 9.
+ Changes in and Disagreements With Accountants on Accounting and Financial Disclosure
+ 180
+ Item 9A.
+ Controls and Procedures
+ 180
+ Item 9B.
+ Other Information
+ 180
+ PART III
+
+Item 10.
+ Directors and Executive Officers of the Registrant
+ 181
+ Item 11.
+ Executive Compensation
+ 181
+ Item 12.
+ Security Ownership of Certain Beneficial Owners and Management and
+ Related Stockholder Matters
+ 181
+ Item 13.
+ Certain Relationships and Related Transactions
+ 182
+ Item 14.
+ Principal Accountant Fees and Services
+ 182
+ PART IV
+
+Item 15.
+ Exhibits and Financial Statement Schedules
+ 182
+      This Annual Report on Form 10-K contains “Forward-Looking Statements” as defined in the Private Securities Litigation Reform Act of 1995. A non-exclusive list of the importantfactors that could cause actual results to differ materially from those in such Forward-Looking Statements is set forth herein under the caption “Management's Discussion and Analysis of Financial Condition and Results of Operations -Cautionary Note Regarding Forward-Looking Statements.”
+
+
+  PART I
+
+
+      ITEM 1. 
+
+     BUSINESS
+
+
+  History
+
+
+     XL Capital Ltd, together with its subsidiaries (the “Company” or “XL”), is a leading provider of insurance and reinsurance coverages, and financial products and services toindustrial, commercial and professional service firms, insurance companies and other enterprises on a worldwide basis. XL Capital Ltd was incorporated with limited liability under the Cayman Islands Companies Act on March 16, 1998, as EXEL MergerCompany. XL Capital Ltd was formed as a result of the merger of EXEL Limited and Mid Ocean Limited on August 7, 1998, and the Company was named EXEL Limited on that date.
+
+     EXEL Limited and Mid Ocean are companies that were incorporated in the Cayman Islands in 1986 and 1992, respectively. At a special general meeting held on February 1, 1999, the shareholders ofthe Company approved a resolution changing the name of the Company to XL Capital Ltd.
+
+     On June 18, 1999, XL Capital Ltd merged with NAC Re Corp. (“NAC”), a Delaware corporation organized in 1985, in a stock merger. This merger was accounted for as a pooling of interestsunder U.S. generally accepted accounting principles (“GAAP”). Following the merger, the Company changed its fiscal year end from November 30 to December 31 as a conforming pooling adjustment.
+
+     On July 25, 2001, the Company acquired certain Winterthur International insurance operations (“Winterthur International”) to extend its predominantly North American-based largecorporate insurance business globally. Results of operations of Winterthur International have been included from July 1, 2001, the date from which the economic interest was transferred to the Company.
+
+     Effective January 1, 2002, the Company increased its shareholding in Le Mans RÉ from 49% to 67% in order to expand its international reinsurance operations. On September 3, 2003, theCompany exercised its option to buy the remaining 33% from MMA for approximately $161 million in cash and changed the name of Le Mans RÉ to XL Re Europe. XL Re Europe underwrites a worldwide portfolio comprising most classes of propertyand casualty reinsurance business, together with a select portfolio of life reinsurance business. See further information under Item 7, “Management's Discussion and Analysis of Financial Condition and Results of Operations” and Item8, Note 5 to the Consolidated Financial Statements.
+
+Segments
+
+     The Company operates through three business segments: Insurance, Reinsurance and Financial Products and Services. These business segments were determined in accordance with Statement ofFinancial Accounting Standard (“FAS”) No. 131, “Disclosures about Segments of an Enterprise and Related Information” (“FAS 131”). General, life and annuity and financial operations are disclosed separately within eachsegment.
+
+     Following changes in certain executive management responsibilities in January 2005, the Company changed the reporting segments under which certain business units are reported in order toreflect these changes in responsibilities.
+
+     The following areas have been changed for all periods presented:
+
+Results of business structured by XL Financial Solutions Ltd (“XLFS”) are now included entirely within
+ the Financial Products and Services segment whereas previously this unit wasreported in all three segments, depending on the nature of individual contracts.Certain blocks of U.S.-based term life mortality reinsurance business previously included in the Financial
+ Products and Services segment are now included in the Reinsurance segment asmanagement of these contracts was transferred to the life reinsurance business units in order to centralize the Company's management of traditional mortality-basedreinsurance business.
+
+1
+
+Political risk insurance business units now report to executive management of the Financial Products and
+ Services segment and, as such, future earnings from this business are no longerreported in the Insurance
+ segment but included with financial operations.All operations of business units within the Financial Products and Services segment, including guaranteed
+ investment contracts and funding agreements, are now reported under financialoperations in order to consolidate businesses with similar operating characteristics and risks.All net investment income and net income from affiliates generated by assets and interest expense incurred
+ on liabilities of the business units within the Financial Products and Servicessegment is reported under
+ financial operations. This income and expense is included in financial operations as it relates to interest on
+ portfolios of separately identified andmanaged assets and deposit liabilities. Management believes this
+ change better reflects the nature of spread focused business.
+
+     The following table sets forth an analysis of gross premiums written by segment for the years ended December 31, 2005, 2004 and 2003. Additional financial information about the Company'ssegments, including financial information about geographic areas, is included in Item 8, Note 3 to the Consolidated Financial Statements.
