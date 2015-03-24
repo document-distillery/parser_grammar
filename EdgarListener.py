@@ -13,12 +13,12 @@ class EdgarListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by EdgarParser#paragraph.
-    def enterParagraph(self, ctx):
+    # Enter a parse tree produced by EdgarParser#text_element.
+    def enterText_element(self, ctx):
         pass
 
-    # Exit a parse tree produced by EdgarParser#paragraph.
-    def exitParagraph(self, ctx):
+    # Exit a parse tree produced by EdgarParser#text_element.
+    def exitText_element(self, ctx):
         pass
 
 
@@ -31,12 +31,30 @@ class EdgarListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by EdgarParser#section_title.
+    def enterSection_title(self, ctx):
+        pass
+
+    # Exit a parse tree produced by EdgarParser#section_title.
+    def exitSection_title(self, ctx):
+        pass
+
+
     # Enter a parse tree produced by EdgarParser#paren_sentence.
     def enterParen_sentence(self, ctx):
         pass
 
     # Exit a parse tree produced by EdgarParser#paren_sentence.
     def exitParen_sentence(self, ctx):
+        pass
+
+
+    # Enter a parse tree produced by EdgarParser#normal_paragraph.
+    def enterNormal_paragraph(self, ctx):
+        pass
+
+    # Exit a parse tree produced by EdgarParser#normal_paragraph.
+    def exitNormal_paragraph(self, ctx):
         pass
 
 
@@ -49,12 +67,30 @@ class EdgarListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by EdgarParser#paren_paragraph.
+    def enterParen_paragraph(self, ctx):
+        pass
+
+    # Exit a parse tree produced by EdgarParser#paren_paragraph.
+    def exitParen_paragraph(self, ctx):
+        pass
+
+
     # Enter a parse tree produced by EdgarParser#words.
     def enterWords(self, ctx):
         pass
 
     # Exit a parse tree produced by EdgarParser#words.
     def exitWords(self, ctx):
+        pass
+
+
+    # Enter a parse tree produced by EdgarParser#nonewline_words.
+    def enterNonewline_words(self, ctx):
+        pass
+
+    # Exit a parse tree produced by EdgarParser#nonewline_words.
+    def exitNonewline_words(self, ctx):
         pass
 
 

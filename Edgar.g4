@@ -1,34 +1,54 @@
 // Define a grammar
 grammar Edgar;
 r: 
-        (( ' ' | TAB )* '\n')* ( paragraph )*
-      ;
+        (( ' ' | TAB )* '\n')* ( text_element )*
+        ;
 
-paragraph:
-	( sentence ) ( (' '|'\n')* sentence )* ( ' ' | TAB )* '\n'+
-	| ( paren_sentence ( '\n' | '.' )* )+
+text_element:
+	  normal_paragraph 
+	| paren_sentence ( '\n' | '.' )* 
+	| quoted_paragraph ( '\n' )*
+	| paren_paragraph ( '\n' )*
 	| ( ' ' | TAB )* '\n'+
-	| ( quoted_paragraph ( '\n' )* )+
+	| section_title  ( '\n' )*
 	;
 
 sentence:
-	'%'? words (':' | '.' )
+	'%'? words ( ':' | '.' )
+	| '\n' ( ' ' | TAB )* '•' ( ' ' | '\n' | TAB )* nonewline_words  ';'?
+	;
+
+section_title:
+	'\n' ( ' ' | TAB )* SECTION_NUMBER nonewline_words '\n'
+	;
+
+SECTION_NUMBER:
+	('Item'|'ITEM') ' '+ [0-9]+([A-Z])? '.' ( ' '|'\n' )*
 	;
 
 paren_sentence:
 	( ' ' | TAB )* '(' WORD ( ( ' ' | TAB | '\n' | ',' | '[' | ']' | ':' | '-' | '/' )+  WORD )* ( ' ' | TAB )* ')' ';'?
 	;
 
+normal_paragraph:
+	( sentence ) ( (' '|'\t')* sentence )* ( ' ' | TAB )* '\n'+
+	;
+
 quoted_paragraph:
 	( ' ' | TAB )* '“' words ('.')? ( (' '|'\n')* words ('.')? )* '”'	
 	;
 
-words:	
+paren_paragraph:
+	( ' ' | TAB )* '(' words ('.')? ( (' '|'\n')* words ('.')? )* ')'	
+	;
+
+words:	/* can have newline between words */
 	( ' ' | TAB )* word ( ( ' ' | TAB | '\n' | ',' | '&' | '[' | ']' | ':' | '-' | '/' )+  word )* ( ' ' | TAB )*
 	;
 
-
-WHITE   : ( ' ' | '\t' ) ;
+nonewline_words:	/* can have newline between words */
+	( ' ' | TAB )* word ( ( ' ' | TAB | ',' | '&' | '[' | ']' | ':' | '-' | '/' )+  word )* ( ' ' | TAB )*
+	;
 
 TAB	: '\t' ;
 
@@ -42,7 +62,7 @@ WORD :
 	| DOTWORD 
 	| EMAIL 
 	| URL 
-	| VALUE 
+	| VALUE
 	| '[' VALUE ']' 
 	| '[' ( ' ' | TAB )*  ']' 
 	| [0-9]+ '(' [0-9a-z]+ ')'
@@ -50,6 +70,11 @@ WORD :
 	| '(' [0-9]+ ')'
 	| LITERAL
 	;
+
+/*PHONE:
+	( '(' [0-9]+ ')' ' ' )? [0-9]+ '-' [0-9]+ '\n'
+	;
+*/
 
 LITERAL:
 	  '“' WORD ( [ \t\n]+ WORD)* ('.'|',')? '”'
@@ -73,7 +98,7 @@ ULWORD :
 	 ;
 
 LATIN:
-	 ('•' | '—' | '˜' | '™' | '›' | 'œ' | '¡' | '¢' | '¤' | '§' | '©' | 'ª' | '«' | '¬'| '®' | '¯' | '°' | 
+	 ( '—' | '˜' | '™' | '›' | 'œ' | '¡' | '¢' | '¤' | '§' | '©' | 'ª' | '«' | '¬'| '®' | '¯' | '°' | 
 	  '±' | 'µ' | '¶' | '·' | 'º' | '»' | '¼' | '½' | '¾' | '¿' | 'À' | 'Á'
 	  'É' | 'É' | 'Í' | '×' | 'Ü' | 'Ý' | 'Þ' | 'ß' | 'à' | 'á' | 'â' | 'ã' | 'ä' | 'å' | 'æ' | 'ç' | 'è' | 'é' |
 	  'ê' | 'ë' | 'ì' | 'í' | 'î' | 'ï' | 'ð' | 'ñ' | 'ò' | 'ó' | 'ô' | 'õ' | 'ö' | '÷' | 'ø' | 'ù' | 'ú' | 'û' |
@@ -110,7 +135,7 @@ BAR      : ( '|' | ' ' )+ '\n' -> skip ;
 BARX	 : '|X|' ' '* '\n' -> skip ;
 NO	 : 'No' ' '* '\n' -> skip ;
 TOPLINE  : '-----BEGIN PRIVACY-ENHANCED MESSAGE-----' ~'\n'+  -> skip ;
-
+TOC	 : '\n' ( ' ' | TAB )* [0-9]+ ( ' ' | '\n' | TAB )* 'Table of Contents\n'  -> skip ;
 
 A_M_	: 'A.M.' ;
 P_M_	: 'P.M.' ;
@@ -149,7 +174,7 @@ JAN_	: 'Jan.' | 'JAN.' ;
 FEB_	: 'Feb.' | 'FEB.' ;
 MAR_	: 'Mar.' | 'MAR_' ;
 APR_	: 'Apr.' | 'APR.' ;
-MAY_	: 'May ' | 'MAY.' ;
+MAY_	: 'May.' | 'MAY.' ;
 JUN_	: 'Jun.' | 'JUN.' ;
 JUL_	: 'Jul.' | 'JUL.' ;
 AUG_	: 'Aug.' | 'AUG.' ;
